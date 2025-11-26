@@ -74,7 +74,7 @@ public class MusicPlayer {
                     step = i + 1;
                 }
             }
-        }, "Task1-T1");
+        }, "T1");
 
         Thread t2 = new Thread(() -> {
             for (int i = 0; i < notes.length; i++) {
@@ -87,7 +87,7 @@ public class MusicPlayer {
                     step = i + 1;
                 }
             }
-        }, "Task1-T2");
+        }, "T2");
 
         t1.start();
         t2.start();
